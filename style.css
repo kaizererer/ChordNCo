@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2C1610; /* Dark background */
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Pushes H1 left and UL right */
+    align-items: center;            /* Vertically centers them */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('guitar-bg.jpg');
+    background-size: cover;          /* Makes the image stretch to cover the whole screen */
+    background-position: center;     /* Centers the image */
+    background-repeat: no-repeat;    /* Prevents the image from repeating/tiling */
+    background-attachment: fixed;    /* Keeps the background fixed while you scroll */
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('guitar-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: #fff; /* White text for better contrast */
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #fff; /* White text for better contrast */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 50px 20px;
+    text-align: center;
+    color: white; /* Makes sure the welcome text is visible on the image */
+}
+
+/* Optional: Add a slight shadow to make text pop */
+main h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+footer {
+    margin-top: 34%;
+    background-color: #2C1610; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 20px; 
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    gap: 40px;                     /* Space between the two columns */
+    padding: 60px 20px;            /* Adds padding around the whole grid block */
+    align-items: center;           /* Vertically centers the content in both columns */
+    color: white;                  /* Default text color for the grid */
+}
+
+.welcome-text {
+    text-align: left;             /* Aligns text to the left as requested */
+}
+
+.welcome-text h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.featured-guitar {
+    text-align: center;           /* Centers the image, title, and button */
+    background: rgba(54, 54, 54, 0.6);  /* Semi-transparent background to make the guitar pop */
+    padding: 20px;
+    border-radius: 2px;
+    max-width: 600px;
+}
+
+.featured-guitar img {
+    max-width: 80%;              /* Makes sure the image scales correctly */
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding-top: 10px; /* Adds some space above the image */
+}
+
+.featured-guitar h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    padding: 10px; /* Adds some padding to the sides of the text */
+}
+
+
+#cta-button {
+    background-color: rgba(62, 45, 29, 0.848);  
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#cta-button:hover {
+    background-color:white;  
+  
+}
+
+
+footer {
+    background-color: #2C1610;  
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: auto;           
+}
+
+
+.about-us {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    max-width: 800px;   
+    margin: 0 auto;      
+    line-height: 1.8;   
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    margin-bottom: 15px; 
+}
+
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;                           
+    padding: 20px 0;
+}
+
+.item-card {
+    background: rgba(54, 54, 54, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item-card img {
+    width: 100%;       
+    display: block;
+}
+
+.item-card p {
+    color: white;          
+    text-align: center;    
+    margin-top: 10px;      
+    font-weight: bold;     
+    font-size: 1.5rem;      
+}
+
+.price {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9rem; 
+}
+
+/* Contact Page Styles */
+.contact-section {
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin-top: 10px;
+}
